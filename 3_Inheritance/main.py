@@ -1,7 +1,7 @@
-from Animal import Animal
-from Animal import Dog
-from Animal import Cat
-from Animal import Mouse
+from animal import Animal
+from animal import Dog
+from animal import Cat
+from animal import Mouse
 
 
 dog = Dog("Scooby")

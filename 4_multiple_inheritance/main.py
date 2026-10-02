@@ -3,7 +3,7 @@
 # multilevel inheritance = inherit from aa parent which inherits from another parent
 #                           C(B) <- B(A) <- A
 
-from Prey import *
+from prey import *
 
 rabbit = Rabbit("RRR")
 hawk = Hawk("HHH")
