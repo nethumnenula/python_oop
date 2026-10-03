@@ -1,8 +1,19 @@
 
+employees = ["ABC", "EFG", "HIJ"]
 
 txt_data = "I like gaming."
 txt_file_path = "output.txt"
 
-with open(file=txt_file_path, mode="w") as file:
-    file.write(txt_data)
-    print(f"txt file '{txt_file_path}' has been created.")
+try:
+    with open(file=txt_file_path, mode="a") as file:
+
+        file.write(txt_data + "\n")
+
+        for employee in employees:
+            file.write(employee+ " ")
+
+
+        print(f"txt file '{txt_file_path}' has been created.")
+
+except FileExistsError:
+    print("That file already exists.")
